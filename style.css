@@ -1,0 +1,145 @@
+
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    
+}
+h2{
+    color: #f2b705;
+    font-weight: 700;
+}
+.logo{
+    color: #f2b705;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #f2b705 !important;
+}
+
+/* PORTADA */
+.portada {
+    background-image: url('https://tofuu.getjusto.com/orioneat-local/resized2/r4HQsY2TuFmbcbAxm-x-300.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+/* Oscurecer imagen como Juicy Lucy */
+.portada::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.contenido {
+    position: relative;
+    z-index: 2;
+}
+
+.titulo {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+section {
+    padding: 80px 0px 20px 0px;
+}
+
+.fa-bars{
+    color: #f2b705;
+}
+.fa-xmark{
+    font-size: 20px;
+    color: white;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler{
+    border-color: #f2b705;
+    color: #f2b705;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
+.offcanvas-header .btn-close{
+    background-color: #1a1a1a;
+    padding: 6px;
+    margin: 0;
+    opacity: 1;
+}
+.navbar-brand:hover{
+    color: #f2b705;
+}
+.carrusel-image{
+    height: 300px;      /* tamaño del carrusel */
+    object-fit: cover;  /* recorta sin deformar */
+    width: 100%;
+}
+
+@media (min-width: 452px) {
+    .carrusel-image {
+        height: 350px;
+    }
+}
+
+@media (min-width: 570px) {
+    .carrusel-image {
+        height: 400px;
+    }
+}
+
+@media (min-width: 820px) {
+    .carrusel-image {
+        height: 500px;
+    }
+}
+
+.menu-img{
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.menu-card {
+    transition: .35s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border: nonoe !important;
+}
+
+.menu-card:hover {  
+    box-shadow: 0 0 8px #f2b705 !important;
+    transform: scale(1.02); /* efecto de agrandar */
+
+}
+.form{
+    border-radius: 16px;
+    box-shadow: 0 0 6px #dbdbdb !important;
+}
+html {
+  scroll-behavior: smooth; /* o solo deshabilitar temporalmente */
+}
+header{
+    padding-bottom: 20px;
+}
